@@ -1,0 +1,18 @@
+{
+  "name": "Wacken Metal Radio",
+  "short_name": "Wacken Metal",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#111014",
+  "theme_color": "#111014",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "/wacken-metal-radio-2026"
+}
