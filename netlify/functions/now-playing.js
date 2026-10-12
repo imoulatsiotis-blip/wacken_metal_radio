@@ -20,7 +20,7 @@ function fetchIcy(url, redirects = 0) {
       settled = true;
       err ? reject(err) : resolve(value);
     };
-    const req = transport.get(url, {
+    const req = transport.get(url, {insecureHTTPParser: true,
       headers: { 'Icy-MetaData': '1', 'User-Agent': 'Mozilla/5.0 WackenRadio/1.0', 'Accept': '*/*' }
     }, res => {
       if ([301, 302, 303, 307, 308].includes(res.statusCode)) {
